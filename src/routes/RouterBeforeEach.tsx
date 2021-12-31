@@ -15,7 +15,7 @@ const RouterBeforeEach = ()=>{
     }else{
       setAuth(true)
     }
-  },[])
+  })
   return auth?<Outlet/>:null
 } 
 

@@ -4,7 +4,7 @@ const TopHeader = ()=>{
   const navigate = useNavigate()
   const handleClick = ()=>{
     sessionStorage.setItem('login','false')
-    navigate('/')
+    navigate('/',{replace:true})
   }
   return(
     <div className="top-header">

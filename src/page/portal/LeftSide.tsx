@@ -13,7 +13,7 @@ const LeftSide = ()=>{
     <div className="left-side">
       <ul>
         <li onClick={()=>handlePage('/Portal/Home')}>Home</li>
-        <li onClick={()=>handlePage('/Portal/Test/8777')}>Test</li>
+        <li onClick={()=>handlePage('/Portal/Test')}>Test</li>
         <li onClick={()=>handlePage('/Portal/uiuiuiu')}>不存在的路由</li>
       </ul>
     </div>

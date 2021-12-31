@@ -16,7 +16,7 @@ const routes = [
         auth:true,
         component:lazy(() => import('../page/home/Home'))
       },
-      { path: '/Portal/Test/:id',
+      { path: '/Portal/Test',
         auth:true,
         component:lazy(() => import('../page/test/Test'))
       },
