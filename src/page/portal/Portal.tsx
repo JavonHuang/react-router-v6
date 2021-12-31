@@ -1,7 +1,8 @@
 import './portal.scss'
 import LeftSide from './LeftSide'
 import TopHeader from './TopHeader'
-import { Outlet } from 'react-router-dom'
+import RouterBeforeEach from './../../routes/RouterBeforeEach'
+
 const Portal =()=>{
   return (
     <div className="portal">
@@ -10,7 +11,7 @@ const Portal =()=>{
       </div>
       <div className="portal-right">
         <TopHeader></TopHeader>
-        <Outlet/>
+        <RouterBeforeEach/>
       </div>
     </div>
   );

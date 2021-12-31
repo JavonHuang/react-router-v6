@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import {BrowserRouter} from "react-router-dom";
 import './index.css';
-import Router from './routes/index'
+import {Router} from './routes/index'
 ReactDOM.render(
   <BrowserRouter>
     <Router/>

@@ -4,8 +4,10 @@ import { Button } from 'antd';
 const Login =(props:any)=>{
   const navigate = useNavigate()
   const handleClick = ()=>{
+    sessionStorage.setItem('login','true')
     navigate('/Portal/Home')
   }
+  
   return (
     <div className="login">
       <div className="login-main">
