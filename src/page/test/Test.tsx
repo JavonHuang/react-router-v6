@@ -12,7 +12,7 @@ const Test = ()=>{
   // console.log(location)
 
   const handleClick = ()=>{
-    setName('黄玉超')
+    setName('Javon')
   }
 
   return(
