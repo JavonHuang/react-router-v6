@@ -31,6 +31,11 @@ const routes = [
     path: '*',
     auth:false,
     component:lazy(() => import('../page/error/NotFound'))
+  },
+  { 
+    path: '/redirect',
+    auth:false,
+    component: lazy(() => import('../page/Redirect/Redirect')),
   }
 ]
 
