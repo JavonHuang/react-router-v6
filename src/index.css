@@ -15,3 +15,6 @@ code {
 #root{
   height: 100%;
 }
+.ka-wrapper,.ka-content{
+  height: 100%;
+}

@@ -2,6 +2,7 @@ import {useNavigate,useLocation } from "react-router-dom";
 import { Outlet } from 'react-router-dom'
 import {checkRouterAuth} from './index'
 import {useEffect,useState} from 'react'
+import KeepAlive from 'react-activation'
 const RouterBeforeEach = ()=>{
   const navigate = useNavigate()
   const location = useLocation()
@@ -16,7 +17,7 @@ const RouterBeforeEach = ()=>{
       setAuth(true)
     }
   })
-  return auth?<Outlet/>:null
+  return <KeepAlive><Outlet/></KeepAlive>
 } 
 
 export default RouterBeforeEach

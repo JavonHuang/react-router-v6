@@ -1,5 +1,7 @@
 import {useRoutes} from "react-router-dom";
 import { Suspense, lazy } from 'react'
+import KeepAlive from 'react-activation'
+
 const routes = [
   {
     path: '/',
@@ -61,7 +63,9 @@ const generateRouter = (routers:any) => {
       <div>加载中...</div>
     }>
       {/* 把懒加载的异步路由变成组件装载进去 */}
-      <item.component />
+      <KeepAlive id={item.path}>
+        <item.component />
+      </KeepAlive>
     </Suspense>
     return item
   })

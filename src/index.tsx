@@ -2,9 +2,12 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter} from "react-router-dom";
 import './index.css';
 import {Router} from './routes/index'
+import { AliveScope } from 'react-activation'
 ReactDOM.render(
   <BrowserRouter>
-    <Router/>
+    <AliveScope> 
+      <Router/>
+    </AliveScope>
   </BrowserRouter>,
   document.getElementById('root')
 );
